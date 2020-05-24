@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="./demo.css">
+   
+  
+
+    
+</head>
+<body>
+    <div class="head">
+        <div class="head-part1">
+            <img class="logo" src="./imgs/logo.png" >
+            <div class="site">
+                <img class="local" src="./imgs/local.png" >
+                <div id="city"></div>
+                <input class="search" placeholder="搜索市、区、县等">
+                <button id="btn">历史记录</button>
+                <div id="local-box">
+                    <ol id="local-li">
+                        
+
+                    </ol>
+
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="head-part2">
+            <div class="gov">中央气象台<span id="now-time"></span>发布</div>
+            <div class="now-weahter">
+                <div id="temperature"></div>
+                <div id="condition"></div>
+            </div>
+            <div class="wind">
+                <img src="./imgs/wind.png" alt="">
+                <span id="win"></span>
+                <span id="win-speed"></span>
+                <span id="win-meter"></span>
+            </div>
+            <div class="tem">
+                <img src="./imgs/temperature.png" alt="">
+                <span>最高温度：<span id="tem-day"></span></span>
+                <span>最低温度：<span id="tem-night"></span></span>
+            </div>
+            <div class="air">
+                <img src="./imgs/air-pressure.png" alt="">
+                <span>空气质量<span id="air-quality">12</span></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="body">
+        <div class="seven-wea-forecast">
+            <div class="clear"></div>
+            <h class="title">·七日天气预报</h>
+            <div id="is-weather-day">
+                <ol id="seven-wea">
+                    <li class="seven-wea-li"></li>
+                    <li class="seven-wea-li"></li>
+                    <li class="seven-wea-li"></li>
+                    <li class="seven-wea-li"></li>
+                    <li class="seven-wea-li"></li>
+                    <li class="seven-wea-li"></li>
+                    <li class="seven-wea-li"></li>
+                </ol>
+            </div>
+            <div class="line">
+                <canvas id="myChart">
+                </canvas>
+            </div>
+        </div>
+        <div class="hourly-wea-forecast">
+            <div class="clear"></div>
+            <h class="title">逐小时预报</h>
+            <div class="hourly-weather">
+                <ol id="hourly-wea">
+                    <li class="hourly-li">
+                        <p>时间</p>
+                        <p>天气状况</p>
+                        <img src="./imgs/yun.png">
+                        <p>温度</p>
+                    </li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                    <li class="hourly-li"></li>
+                </ol>
+            
+
+        </div>
+
+          
+           
+        
+        </div>
+        <div class="life">
+            <h class="title">·生活指数</h>
+            <div class="life-guide">
+                <div class="life-warrp"></div>
+                <div class="life-warrp"></div>
+                <div class="life-warrp"></div>
+                <div class="life-warrp"></div>
+            </div>
+            <div class="life-guide">
+                <div class="life-warrp"></div>
+                <div class="life-warrp"></div>
+                <div class="life-warrp"></div>
+                <div class="life-warrp"></div>
+            </div>
+    <div class="foot"></>
+    <script src="./demo.js"></script>
+    <script src="./myweb/chart.js/Chart.bundle.js"></script>
+</body>
+</html>
